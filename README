@@ -1,0 +1,25 @@
+Jeremy Kyle Delima 10109442
+CPSC 453 Assignment 2
+
+Reused code:
+From the folder downloaded from Erika Harrison's tutorial 8. I reused some code from the example.cpp file like the loading and implementation of the shader file, and the creation and loading of buffer data. The renderScene function is also based off of the renderScene function in the example.cpp. And the callback functions and main function is reused as well. 
+
+Running the program:
+All the files needed are in the zipped files sent. In the command line we navigate to the folder containing all the files and enter the command 'make'. Then we enter the command './app' which displays the application window. Once the application window is up it prompts the user for the model they want to load, choices are listed. If you enter something that isn't one of the choices then the program ends.
+
+Transformations (the application window has to be the current open window):
+1. Scaling - To increase the model's scale you press up arrow, to decrease you press the down arrow. The scaling increments/decrements by 0.05 each button press. You can also hold these buttons down to scale it faster.
+2. Rotating - The rotation is performed along the z-axis, and so to rotate it right you press the right arrow, and pressing the left arrow rotates it left. Each press rotates it by 2 degrees, and just like the scaling, you can hold these buttons down to rotate faster.
+3. Lighting - The lighting characteristics that can be modified are: 1-Specular Albedo, 2-Specular Power, 3-Diffuse Albedo, 4-Ambience, and the 5-Light Intensity. To modify any of these you need to right click on the application window first. It then prompts you in the command line to enter an integer based on what you want to change. If you input an integer that isn't 1-5 then it brings you back to the menu. You also have to input the values for Specular Albedo, Diffuse Albedo, and Ambience one by one.
+
+Bonuses:
+The only bonus I got is for the material properties (diffuse, ambience, and light intensity modifications). To modify these refer to lighting in the transformations section.
+
+Bugs:
+The only warnings are from the unused parameters in the callback functions and our main command line parameters.
+The program seg faults if the input for loading a model isn't one of the choices.
+If you don't input an integer when accessing the lighting menu it doesn't run properly and you have to exit the program to do any other functions.
+The same goes for inputting lighting values wrongly.
+
+Note:
+Light position in (300, 0, 300).
